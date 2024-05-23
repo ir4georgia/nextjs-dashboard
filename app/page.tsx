@@ -25,16 +25,16 @@ export default function Page() {
             </a>
             , brought to you by Vercel.
           </p>
-          <Link
-            href="/login"
+          <a
+            href="/dashboard"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
+          </a>
         </div>
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
-          <Image
+          {/* <Image
             src="/hero-desktop.png"
             width={1000}
             height={760}
@@ -47,7 +47,14 @@ export default function Page() {
             height={620}
             className="block md:hidden"
             alt="Screenshot of the dashboard project showing mobile version"
-          />
+          /> */}
+          <div className="md:container md:mx-auto space-y-1.5 border-solid border-2">
+            <div id="ad_nat_atf_01"></div>
+            <div id="ad_nfs_btf_01"></div>
+            <div id="ad_bnr_btf_01"></div>
+            <div id="ad_nat_atf_02"></div>
+            <div id="ad_bnr_atf_02"></div>
+          </div>
         </div>
       </div>
       <Script id="queue-registry" strategy="lazyOnload">{`
@@ -56,7 +63,7 @@ export default function Page() {
                     AdFuel.queueRegistry('//i.cdn.turner.com/ads/nba3/nba_homepage.json', {});
                     `}
 
-            </Script>
+      </Script>
     </main>
   );
 }

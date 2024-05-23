@@ -1,6 +1,12 @@
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 import Script from 'next/script'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Acme Dashboard',
+  description: 'Michael is learning NextJS.',
+};
 
 export default function RootLayout({
   children,
