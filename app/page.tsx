@@ -26,7 +26,7 @@ export default function Page() {
             , brought to you by Vercel.
           </p>
           <a
-            href="/dashboard"
+            href="dashboard.html"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
@@ -59,7 +59,7 @@ export default function Page() {
       </div>
       <Script id="queue-registry" strategy="lazyOnload">{`
                     AdFuel.addPageLevelTarget('status', 'nba_nextgen')
-                    console.log('MP-OPS: Queueing Registry at ' + new Date(Date.now()).toLocaleString());
+                    console.log('MP-OPS: Queueing Registry');
                     AdFuel.queueRegistry('//i.cdn.turner.com/ads/nba3/nba_homepage.json', {});
                     `}
 
